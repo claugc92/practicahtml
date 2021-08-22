@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+#contenido {
+    font-size: 62.5%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 150px 1fr 150px;
+    height: 100vh;
+    padding: 0px 200px;
+    background-color: gainsboro;
+    grid-template-areas: "header header"
+                        "seccion main "
+                        "nav nav";
+    gap: 5px;
+}
+
+@media (max-width: 600px) {
+    #contenido {
+        grid-template-columns: 1fr;
+        grid-template-rows: 10fr 20fr 50fr 10fr;
+        grid-template-areas:
+                            "header"
+                            "seccion" 
+                            "main"   
+                            "nav";
+}
+}
+
+
+.header{
+    display: grid;
+    grid-area: header;
+    border: #884EA0 solid 2px;
+    border-radius: 9px;
+    justify-content: center;
+    align-items: center;
+    color: darkred;
+    /* font-size: 0.5rem; */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image: url(/meditacion.jpg)
+}
+
+.header > h1{
+
+    font-size: 2.5rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: crimson;
+    padding-left: 11.0rem;
+    margin-top: -1.0rem;
+    margin-bottom: -3.0rem;
+    font-weight: 800;
+    transition-duration: 2s;
+}
+
+.header > h3{
+    font-size: 1.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:violet;
+}
+
+.section{
+    display: grid;
+    grid-area: seccion;
+    background-color: #8E44AD;
+    border: #884EA0 solid 2px;
+    border-radius: 9px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.section li:hover{
+
+    color: black;
+    background-color:darkorchid;
+    
+}
+
+.section li::selection{
+
+    color: brown;
+    background-color: coral;
+}
+
+.section > ol{
+    display: grid;
+    font-size: 1.5rem;
+    padding-left: 0.5rem;
+    gap: 1.0rem;
+    row-gap: 3.0rem;
+    list-style: none;
+    gap: 2.0rem;
+    text-decoration: none;
+    color:coral ;
+
+}
+
+.main{
+    display: grid;
+    grid-area: main;
+    background-color: #E8DAEF;
+    border: #884EA0 solid 2px;
+    border-radius: 9px;
+}
+
+.nav{
+    display: grid;
+    background-color: #C39BD3;
+    grid-area: nav;
+    border: #884EA0 solid 2px;
+    border-radius: 9px;
+}
+
+main{
+
+    padding: 10px;
+    font-size: 1.0rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+img{
+
+padding: 5.0rem;
+}
+
+nav{
+
+display: grid;
+gap: 5.0rem;
+padding: 2.0rem;
+font-size: 1.0rem;
+justify-content: center;
+align-items: center;
+
+}
+
+div{
+
+    padding: 40px;
+    column-gap: 50px
+    ;
+}
