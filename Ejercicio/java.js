@@ -1,0 +1,1 @@
+let numero = prompt ("Introduce tu edad")
