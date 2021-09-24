@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./practica.css">
     <link href = "https: //fonts.googleapis.com/css2? family = Dancing + Script: wght @ 600 & display = swap "rel =" stylesheet ">
-    <link rel="stylesheet" href="./java.js">
+    <script src="./java.js"></script>
 </head>
 <body>
     <div id="contenido">
@@ -29,15 +29,16 @@
        <ol>
        <li> Meditación para principiantes</li>
        <li> Guia de aromaterapia</li>
-    <li> Bienestar y salud emocional<li></li></ol>
-       <!-- <li> Reiki diferentes niveles</li>
+    <li> Bienestar y salud emocional<li></li>
+       <li> Reiki diferentes niveles</li>
        <li> Musicaterapia</li>
-       <li> Meditación en casa</li> -->
-       <input type="Sugerencias" id="input">
-       <button class="addbutton">Sugerencias</button>
-        
+       <li> Meditación en casa</li></ol>
 
 </section>
+<input type="Sugerencias" id="input">
+<button class="addbutton">Sugerencias</button>
+<ol id="lista"></ol>
+ 
 <footer class="footer">
 
         <a href="">Contacto</a>
@@ -47,30 +48,3 @@
     </footer>
 
 </div>
-
-<script>
-
-    const section = document.getElementsByClassName("section");
-    const newElement = document.createElement ("ol");
-    const input = document.getElementById("input")
-    const button = document.getElementsByClassName("addbuton")
-
-    const agregarText = function(){
-
-        if(input.value === "") return
-        const newElement = document.createElement("p");
-        nuevoText.textContent = input.value;
-    
-        input.value="";
-
-        section.appendChild(newElement);
-
-    }
-    
-
-    addButton.innerHTML = "texto"
-    // let numero = prompt("Introduce tu edad")
-
-</script>
-</body>
-</html>

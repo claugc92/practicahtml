@@ -9,7 +9,7 @@ body{
 
     display: grid;
     grid-template-columns: 2.5fr 2fr;
-    grid-template-rows: 80px 3fr 4fr 1fr;
+    grid-template-rows: 80px 3fr 4fr 0.5fr;
     grid-template-areas: "header header"
                         "article  main"
                         "article main"
@@ -97,3 +97,7 @@ footer{
     text-transform: uppercase;
 }
 
+article{
+    display: grid;
+    display: inline;
+}
