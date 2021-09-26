@@ -1,1 +1,2 @@
-# practicahtml
+El proyecto está ubicado en la carpeta ProyectoPaginaLogin/ProyectoPaginaPrincipal, la página donde se encuentra el contenido. 
+En la carpeta ProyectoPaginaprincipal está ubicado la pagina principal, donde el usuario tiene que utilizar el login para acceder luego a la pagina con el contenido ubicado en ProyectoPaginaprincipal.
